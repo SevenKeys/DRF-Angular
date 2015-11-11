@@ -1,0 +1,12 @@
+{% load compress %}
+{% load staticfiles %}
+
+{% compress css %}
+<!-- Bootstrap Core CSS -->
+<link href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="{% static 'css/main.css' %}" rel="stylesheet">
+<!-- Snackbar CSS -->
+<link href="{% static 'lib/snackbar.min.css' %}" rel="stylesheet">
+<link href="{% static 'css/materials.css' %}" rel="stylesheet">
+{% endcompress %}

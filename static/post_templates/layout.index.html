@@ -1,0 +1,26 @@
+<div class="col-md-4">
+	<h4>Search:</h4>
+    <input ng-model="q" id="search" class="form-control" placeholder="Filter text">
+</div>
+<div class="row" ng-cloak>
+	<div dir-paginate="post in posts | itemsPerPage: 10 | filter: q" ng-show="posts && posts.length">
+        <div class="col-xs-6 col-lg-4">
+		    <userpost info="post"></userpost>
+	    </div>
+	</div>
+</div>
+
+<div ng-hide="posts && posts.length">
+  <div class="col-sm-12 no-posts-here">
+    <em>The are no posts here.</em>
+  </div>
+</div>
+
+<a class="btn btn-primary btn-fab btn-raised mdi-content-add btn-add-new-post"
+  href="/new-post" ng-show="isAuthenticated">Add a new post</a>
+
+<!-- Pagination -->
+    <div class="pagin-posts text-center">
+        <dir-pagination-controls></dir-pagination-controls>
+    </div>
+</div>

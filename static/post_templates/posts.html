@@ -1,0 +1,15 @@
+<div class="well">
+  <div class="post">
+    <div class="post__meta">
+      <a href="/{{ scopePost.owner.id }}">
+        {{ scopePost.owner.username }}
+      </a>
+    </div>
+    <div class="post__title">
+      {{ scopePost.title }}
+    </div>
+    <div class="post__content" ng-repeat="column in columns track by $index">
+      {{ column }}
+    </div>
+  </div>
+</div>

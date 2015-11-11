@@ -1,0 +1,33 @@
+{% load compress %}
+{% load staticfiles %}
+
+{% compress js %}
+<!-- Libs -->
+<script type="text/javascript" src="{% static 'bower_components/jquery/dist/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/bootstrap/dist/js/bootstrap.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/underscore-min/underscore-min.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/angular/angular.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/angular-cookies/angular-cookies.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/angular-route/angular-route.js' %}"></script>
+<script type="text/javascript" src="{% static 'bower_components/angular-resource/angular-resource.js' %}"></script>
+<script type="text/javascript" src="{% static 'lib/snackbar.min.js' %}"></script>
+<script src="{% static 'bower_components/angularUtils-pagination/dirPagination.js' %}"></script>
+<!-- General Angular files -->
+<script type="text/javascript" src="{% static 'js/app.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/config.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/routes.js' %}"></script>
+<!-- Authentication -->
+<script type="text/javascript" src="{% static 'js/authentication/authentication.service.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/authentication/authentication.controllers.js' %}"></script>
+<!-- Posts -->
+<script type="text/javascript" src="{% static 'js/posts/post.service.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/posts/post.controllers.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/posts/post.directives.js' %}"></script>
+<!-- Layout -->
+<script type="text/javascript" src="{% static 'js/layout/layout.controllers.js' %}"></script>
+<!-- Profiles -->
+<script type="text/javascript" src="{% static 'js/profiles/profile.service.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/profiles/profile.controllers.js' %}"></script>
+<!-- Snackbar -->
+<script type="text/javascript" src="{% static 'js/utils/snackbar.service.js' %}"></script>
+{% endcompress %}

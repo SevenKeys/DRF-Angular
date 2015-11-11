@@ -1,0 +1,14 @@
+<div class="profile" ng-show="profile">
+  <div class="jumbotron profile__header">
+    <h1 class="profile__username">{{ profile.username }}</h1>
+    <p class="profile__tagline">{{ profile.tagline }}</p>
+  </div>
+
+  <div class="row" ng-cloak>
+	<div ng-repeat="post in posts" ng-show="posts && posts.length">
+        <div class="col-xs-6 col-lg-4">
+		    <userpost info="post"></userpost>
+	    </div>
+	</div>
+  </div>
+</div>

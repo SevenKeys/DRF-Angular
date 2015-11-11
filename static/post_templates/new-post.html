@@ -1,0 +1,22 @@
+<div class="col-md-5 col-md-offset-3">
+  <form role="form" ng-submit="submit()">
+    <div class="form-group">
+      <label for="post__title">Title of Post</label>
+      <input id="post__title" class="form-control" ng-model="title" placeholder="Enter title">
+    </div>
+    <div class="form-group">
+      <label for="post__content">Text for Post</label>
+      <textarea class="form-control" 
+                id="post__content" 
+                rows="3" 
+                placeholder="Enter text" 
+                ng-model="body">
+      </textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>

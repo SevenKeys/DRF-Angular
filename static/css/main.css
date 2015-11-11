@@ -1,0 +1,52 @@
+/*!
+ * Start Bootstrap - 1 Col Portfolio HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 70px;  /*Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+.img-responsive{
+	width:200px;
+}
+.content-posts {
+  border: 1px solid #fcc;
+  padding: 5px;
+  margin: 3px;
+}
+.content-posts small {
+  color: #c99;
+}
+.pagin-posts {
+  border: 1px solid #ccf;
+  padding: 5px;
+  margin: 3px;
+}
+.pagin-posts small {
+  color: #99c;
+}
+.list-posts{
+  margin: 50px 10px;
+}
+.no-posts-here {
+  text-align: center;
+}
+.post {}
+.post .post__meta {
+  font-weight: bold;
+  text-align: right;
+  padding-bottom: 19px;
+}
+.post .post__title {
+  font-weight: bold;
+  text-align: left;
+}
+.post .post__meta a:hover {
+  text-decoration: none;
+}
+.btn-add-new-post {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
