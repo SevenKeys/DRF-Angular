@@ -25,7 +25,7 @@
   		var data = {
   			title: $scope.title,
   			body: $scope.body,
-  	  	    owner: Authentication.getAuthenticatedAccount().username
+  	  	owner: Authentication.getAuthenticatedAccount().username
   		};
   	    Posts.create(data).then(newPostSuccessFn, newPostErrorFn);
 

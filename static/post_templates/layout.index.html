@@ -11,7 +11,7 @@
 </div>
 
 <div ng-hide="posts && posts.length">
-  <div class="col-sm-12 no-posts-here">
+  <div class="no-posts-here">
     <em>The are no posts here.</em>
   </div>
 </div>
@@ -20,7 +20,7 @@
   href="/new-post" ng-show="isAuthenticated">Add a new post</a>
 
 <!-- Pagination -->
-    <div class="pagin-posts text-center">
+    <div class="pagin-posts text-center" ng-show="posts && posts.length > 10">
         <dir-pagination-controls></dir-pagination-controls>
     </div>
 </div>

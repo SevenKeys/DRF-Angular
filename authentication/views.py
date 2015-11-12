@@ -43,7 +43,6 @@ class LoginView(views.APIView):
 		password = data.get('password', None)
 
 		account = authenticate(username=username, password=password)
-		print account
 		if account is not None:
 			if account.is_active:
 				login(request, account)

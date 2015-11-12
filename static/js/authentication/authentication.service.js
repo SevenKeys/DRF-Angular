@@ -57,7 +57,7 @@
         function registerErrorFn(data, status, headers, config) {
           Snackbar.error('Register failure!');
           if(Authentication.isAuthenticated()){
-            console.log('Account exists');
+            Snackbar.show('Sorry, may be account already exists');
           }
         }
       }
