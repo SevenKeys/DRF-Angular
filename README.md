@@ -5,9 +5,11 @@
 *NOTE: Requires [virtualenv](http://virtualenv.readthedocs.org/en/latest/) and
 [Bower](http://bower.io/).*
 
-* Clone this repository.
+  Clone and run this repository.
+* `$ virtualenv env`
+* `$ cd env`
+* `$ . bin/activate`
 * `$ git clone http://github.com/SevenKeys/DRF-Angular.git`
-* `$ virtualenv DRF-Angular`
 * `$ cd DRF-Angular`
 * `$ pip install -r requirements.txt`
 * `$ bower install`
