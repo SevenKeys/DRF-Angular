@@ -1,5 +1,5 @@
 # DRF-Angular
-
+This is an example of blog with posts. Django-Rest-Framework is combined with AngularJS, such thing creates powerful instrument for interchanging JSON data. User registration and management made with AngularJS.
 ## Installation
 
 *NOTE: Requires [virtualenv](http://virtualenv.readthedocs.org/en/latest/) and
